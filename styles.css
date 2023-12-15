@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.nav-res-t {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    
+}
+
+.nav-menu-button {
+    display: none;
+}
+
+.nav-button {
+    display: none;
+}
+
+.logo {
+    position: relative;
+    width: 200px;
+    right: 10px;
+}
+
+.logo img {
+    position: relative;
+    top: 3px;
+    width: 100%;
+}
+
+.nav-center {
+    display: flex;
+    position: relative;
+    gap: 15px;
+    font-weight: 600;
+}
+
+.nav-center a {
+    padding: 10px 15px 10px 15px;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+}
+
+.nav-right a {
+    text-decoration: none;
+}
+
+.nav-right a > label {
+    padding: 10px 15px 10px 15px;
+    color: black;
+
+}
+
+.nav-right a > i {
+    font-size: 20px;
+    padding: 10px 5px 10px 5px;
+    color: black;
+    text-decoration: none;
+    margin-left: 4px;
+    margin-right: 4px;
+    
+}
+
+.cart-circle::before {
+    content: "1";
+    color: white;
+    font-size: 13px;
+    display: flex;
+    position: absolute;
+    right: 177px;
+    bottom: 23px;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: red;
+    border: 2px solid white;
+
+}
+
+main {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    
+}
+
+.content {
+    display: flex;
+    gap: 35px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+    
+    flex-basis: 45%;
+    gap: 30px;
+}
+
+.card-top, .card-button {
+    width: 100%;
+    height: 190px;
+    background-color: white;
+    box-shadow: 2px 5px 10px rgb(211, 211, 211);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.card-top a, .card-button a {
+    margin-left: 30px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.card-top a > i, .card-button a > i {
+    color: #00DBB6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #00DBB6;
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+} 
+
+.gg-doc, .gg-slid {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.gg-doc {
+    width: 145px;
+    height: 145px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 2%;
+    border-radius: 20px;
+    background: linear-gradient(34deg, rgb(16, 67, 157) 0%, rgb(21, 100, 236) 56%, rgba(152,207,255,1) 95%),url("../images/product.png");
+    background-position: 50% 130%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+.file-doc {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(32,95,176,1);
+    background-color: white;
+}
+
+.gg-doc p, .gg-slid p {
+    font-weight: 500;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.gg-doc p1, .gg-slid p1 {
+    color: rgb(250, 248, 248);
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.card-top-b p, .card-button-b p {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.card-top-b i, .card-button-b i {
+    color: gainsboro;
+    margin: 2px;
+}
+
+input[type=radio]{
+    accent-color: #00DBB6;
+    border: none;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+select {
+    cursor: pointer;
+    color: rgb(112, 112, 112);
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    height: 30px;
+    width: 80px;
+    border-radius: 8px;
+    margin-left: 5px;
+    padding-left: 10px;
+}
+
+option {
+    padding: 20px;
+}
+
+.price {
+    margin-top: 16px;
+    font-family: 'Roboto';
+    color: rgb(112, 112, 112);
+}
+
+.price label {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.file-slid {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(227,101,28,1);
+    background-color: white;
+}
+
+.gg-slid {
+    width: 145px;
+    height: 145px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 2%;
+    border-radius: 20px;
+    background-image: linear-gradient(28deg, rgba(227,101,28,1) 0%, #fbbc04 66%, rgb(255, 234, 172) 90%);
+    background-position: 50% 130%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+.card-right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 55%;
+   
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+   
+    flex-basis: 50%;
+    box-shadow: 2px 5px 10px rgb(211, 211, 211);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.order {
+    font-size: 25px;
+    
+}
+
+.sub-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-right: 20px;
+    color: rgb(101, 101, 101);
+}
+
+.promo {
+    width: 100%;
+    padding: 20px;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.promo i {
+    font-size: 25px;
+    color: #00DBB6;
+}
+
+.promo input[type=text] {
+    width: 65%;
+    height: 45px;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    color: black;
+}
+
+.promo button {
+    width: 25%;
+    height: 45px;
+    color: #00DBB6;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 15px;
+    border: 2px solid #00DBB6;
+    background-color: transparent;
+}
+
+.card-main-button {
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+
+.card-main-top .name {
+    padding-left: 10px;
+    font-size: 18px;
+    color: gray;
+    font-weight: 600;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.total h1 {
+    color: #00DBB6;
+}
+
+.img_a{
+    width: 30px;
+    height: 30px;
+}
+
+.card-main-button button {
+    width: 100%;
+    height: 45px;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #00DBB6;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 2px 5px 10px rgb(211, 211, 211);
+}
+
+
+input::placeholder {
+    color: rgb(166, 166, 166);
+  }
